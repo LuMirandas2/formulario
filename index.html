@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charse="utf-8">
+    <title>Validando Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="imagem/email.gif" alt="Cadastrando" >
+        </div>
+
+        <div class="rightside">
+            <br>
+            <br>
+            <br>
+            <h1>Criando uma conta</h1>
+          
+            <form method="POST" action="cadastro.jsp" class="validador">
+                <label>
+                    Seu nome:<br>
+                    <input type="text" name="name" data-rule="required|min-2" >
+                </label>
+                <label>
+                    Seu e-mail:<br>
+                    <input type="text" name="email" data-rules="required|email" >
+                </label>
+                <label>
+                    Sua senha:<br>
+                    <input type="passaword" name="password" data-rules="min=4" >
+                </label>
+                <label>
+                    <input type="submit" value="Cadastrar" > 
+                </label>
+            </form>
+            <div>
+                Já tem uma conta? <a href="">Faça o Login</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="formulario.js"></script>
+ <!--porque chamar JS aqui em baixo?-->
+</body>
+
+</html>
